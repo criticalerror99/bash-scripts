@@ -47,7 +47,7 @@ function main(){
 	fi	
 
 	if [ $# -eq 0 ]; then
-		echo "Invalid arguments number"
+		echo "No arguments passed to script"
 		exit 2
 	fi
 	
