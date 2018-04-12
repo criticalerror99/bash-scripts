@@ -19,7 +19,7 @@ function create_vhost(){
 function create_user(){
 	USER=$1
 
-	grep -E "^USER" /etc/passwd
+	grep -E "^$USER" /etc/passwd
 	if [ $? -eq 0 ]; then
 		echo "User $USER already exist"
 		return 1	
