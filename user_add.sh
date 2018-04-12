@@ -59,7 +59,6 @@ function main(){
 	if [ $# -eq 3 ]; then
 			for ((num=$2; num <= $3; num++))
 			do
-				echo "num $num"
 				create_user ${USER_NAME}$num
 			done
 	else
